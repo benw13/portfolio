@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ben Williams</title>
+  <meta name="description" content="Ben Williams: Finance student at Texas A&M's Mays Business School who builds and ships software, including NutriStack on the App Store.">
+  <meta property="og:title" content="Ben Williams">
+  <meta property="og:description" content="Finance at Texas A&M Mays. Builder of NutriStack, CourseTwin, and a prediction-market research system.">
+  <meta property="og:image" content="assets/img/headshot.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Ben Williams, back to top">
+        <span class="brand-mark" aria-hidden="true">BW</span>
+        <span>Ben Williams</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="keep" href="#contact">Contact</a>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch color theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 class="hero-name" id="hero-name">
+            <span class="line"><span>Ben</span></span>
+            <span class="line"><span>Williams</span></span>
+          </h1>
+          <p class="hero-lede">
+            I study <strong>finance at Texas A&amp;M’s Mays Business School</strong>, and I build software on the side. So far that’s an iOS app live on the App Store, an AI study tool that has to cite its sources, and a trading research system that tested four strategies against real fees.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">See my work</a>
+            <a class="btn btn-ghost" href="assets/files/Ben_Williams_Resume.pdf" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+              Download résumé
+            </a>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/headshot.jpg" alt="Headshot of Ben Williams in a navy suit" width="800" height="1000">
+          </div>
+          <dl class="status" aria-label="Current status">
+            <div class="status-row"><dt>Now</dt><dd><span class="live-dot" aria-hidden="true"></span>B2C Strategy Lead, Ucardia</dd></div>
+            <div class="status-row"><dt>Studying</dt><dd>BBA Finance, Texas A&amp;M</dd></div>
+            <div class="status-row"><dt>Graduating</dt><dd>August 2027</dd></div>
+          </dl>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Texas A&M strip -->
+    <section class="aggie" aria-label="Texas A&M status">
+      <div class="wrap aggie-grid">
+        <p class="aggie-lead">Texas A&amp;M University<small>Mays Business School, College Station</small></p>
+        <div class="aggie-fact"><b>BBA Finance</b><span>Expected August 2027</span></div>
+        <div class="aggie-fact"><b class="num">3.31 GPA</b><span>3x Academic Honors Award</span></div>
+        <div class="aggie-fact"><b>Treasurer</b><span>Texas A&amp;M Golf Club (NCCGA)</span></div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title" id="work-title">Things I’ve built</h2>
+          <p class="section-intro">I pick problems I actually have, take them from idea to working product, and keep an honest record of what worked.</p>
+        </div>
+
+        <!-- NutriStack -->
+        <article class="feature" id="nutristack" aria-labelledby="ns-title">
+          <div class="feature-body">
+            <div class="feature-meta">
+              <img src="assets/img/ns-icon.png" alt="" width="56" height="56">
+              <p><b>NutriStack</b>iOS app, live on the App Store (v1.1)</p>
+            </div>
+            <h3 id="ns-title">A supplement tracker that checks your whole stack for dangerous combinations.</h3>
+            <p class="feature-copy">
+              I designed, built and shipped NutriStack on my own. You add everything you take, and it screens the full stack for supplement and prescription interactions, schedules <strong>when</strong> to take each item, and tracks whether it’s helping. You can scan a bottle’s barcode or label to grade the product and see how it would change your stack. Its claims are backed by PubMed and DOI citations. The same knowledge base powers <strong>nutristackapp.com</strong>, a public research site with 1,142 indexed pages that brings in new users from search.
+            </p>
+            <div class="stats">
+              <div class="stat"><b class="num">2,544</b><span>interactions mapped</span></div>
+              <div class="stat"><b class="num">298</b><span>prescription drugs covered</span></div>
+              <div class="stat"><b class="num">2,015</b><span>studies cited</span></div>
+              <div class="stat"><b class="num">642</b><span>unit tests on ~119K lines of Swift</span></div>
+            </div>
+            <ul class="tags" aria-label="Built with">
+              <li class="tag">Swift 6</li><li class="tag">SwiftUI</li><li class="tag">SwiftData</li><li class="tag">Firebase</li><li class="tag">Cloud Functions</li><li class="tag">OpenAI API</li><li class="tag">StoreKit 2</li><li class="tag">Vision OCR</li>
+            </ul>
+            <div class="links">
+              <a class="btn btn-primary" href="https://apps.apple.com/us/app/id6761284957" target="_blank" rel="noopener">View on the App Store</a>
+              <a class="btn btn-ghost" href="https://nutristackapp.com" target="_blank" rel="noopener">Visit nutristackapp.com</a>
+            </div>
+          </div>
+
+          <div class="feature-demo">
+            <div class="phone">
+              <div class="phone-screen" id="phoneScreen">
+                <img class="on" src="assets/img/ns-today.jpg" alt="NutriStack Today screen with a sky header, 4 of 6 doses logged and a dose timeline" data-key="today">
+                <img src="assets/img/ns-stack.jpg" alt="NutriStack My Stack screen with a stack score of 65 and supplement cards with timing flags" data-key="stack" loading="lazy">
+                <img src="assets/img/ns-safety.jpg" alt="NutriStack Safety review showing a Calcium and Iron separation note" data-key="safety" loading="lazy">
+                <img src="assets/img/ns-scan.jpg" alt="NutriStack scan result grading a fish oil product" data-key="scan" loading="lazy">
+                <img src="assets/img/ns-coach.jpg" alt="NutriStack Coach screen suggesting a next move backed by source-linked records" data-key="coach" loading="lazy">
+                <img src="assets/img/ns-discover.jpg" alt="NutriStack Discover screen with search, goals and personalized picks" data-key="discover" loading="lazy">
+                <img src="assets/img/ns-research.jpg" alt="NutriStack Research Library with supplement, medication and interaction hubs" data-key="research" loading="lazy">
+              </div>
+            </div>
+            <div class="screen-tabs" role="tablist" aria-label="NutriStack screens">
+              <button role="tab" aria-selected="true" data-key="today" data-cap="Today: every dose on a timeline, grouped by time of day, with a daily ring and streak.">Today</button>
+              <button role="tab" aria-selected="false" data-key="stack" data-cap="Your stack gets a score, and every supplement shows its timing and any flags to review.">Stack</button>
+              <button role="tab" aria-selected="false" data-key="safety" data-cap="The safety review checks every pair in the stack and explains what to do, like spacing calcium and iron two hours apart.">Safety</button>
+              <button role="tab" aria-selected="false" data-key="scan" data-cap="Scan a barcode or label to grade the product and preview what it would do to your stack.">Scan</button>
+              <button role="tab" aria-selected="false" data-key="coach" data-cap="Coach, the AI advisor, suggests your next move and can only cite records the app has verified.">Coach</button>
+              <button role="tab" aria-selected="false" data-key="discover" data-cap="Discover: search, health goals and recommendations matched to your stack.">Discover</button>
+              <button role="tab" aria-selected="false" data-key="research" data-cap="A research library covering supplements, medications and interaction checks.">Research</button>
+            </div>
+            <p class="screen-caption" id="screenCaption" aria-live="polite">Today: every dose on a timeline, grouped by time of day, with a daily ring and streak.</p>
+          </div>
+        </article>
+
+        <!-- CourseTwin -->
+        <article class="project" id="coursetwin" aria-labelledby="ct-title">
+          <div class="project-body">
+            <p class="project-kicker">CourseTwin, private beta</p>
+            <h3 id="ct-title">An AI study workspace that won’t answer without a source.</h3>
+            <p class="project-copy">
+              Students record lectures or upload their own notes, and CourseTwin turns them into cited notes, practice questions and an exam study plan. The rule that shapes everything: <strong>if a claim can’t be traced to the student’s own material, it isn’t shown.</strong>
+            </p>
+            <ul class="checks">
+              <li>Click any citation in the notes and the lecture audio plays from that exact second.</li>
+              <li>Practice questions (multiple choice, multi-select, numeric and written) are solved independently and checked against the source before a student sees them.</li>
+              <li>An “Up next” study queue, one-click “Ask about this” on any note or passage, and a ⌘K bar to find or do anything.</li>
+              <li>Tracks mastery of each learning objective and builds an adaptive exam study plan.</li>
+              <li>Privacy first: an encrypted local database, no school-account integration, and recording only when the student starts it.</li>
+            </ul>
+            <div class="mini-stats">
+              <div><b class="num">1,105</b><span>unit tests, plus browser tests</span></div>
+              <div><b class="num">~60K</b><span>lines of TypeScript</span></div>
+              <div><b class="num">120</b><span>commits since Aug 29</span></div>
+            </div>
+            <p class="note">I build CourseTwin by directing several AI coding agents in parallel against a detailed product spec. My job is the product decisions, the architecture and the review. A private instance runs on Railway, and I’m rolling out a new notebook-style interface, shown here.</p>
+            <ul class="tags" aria-label="Built with">
+              <li class="tag">TypeScript</li><li class="tag">React</li><li class="tag">Electron</li><li class="tag">Express</li><li class="tag">Encrypted SQLite</li><li class="tag">Whisper</li><li class="tag">Playwright</li><li class="tag">Docker</li><li class="tag">Railway</li>
+            </ul>
+          </div>
+          <div class="project-visual">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>coursetwin: private beta</span></div>
+              <div class="browser-view" id="ctView">
+                <img class="on" src="assets/img/ct-practice.jpg" alt="CourseTwin practice question with a verified answer and a source citation" data-key="practice">
+                <img src="assets/img/ct-notes.jpg" alt="CourseTwin lecture page with audio player, cited notes and a timestamp citation" data-key="notes" loading="lazy">
+              </div>
+            </div>
+            <div class="seg" role="tablist" aria-label="CourseTwin screens">
+              <button role="tab" aria-selected="true" data-key="practice">Checked practice</button>
+              <button role="tab" aria-selected="false" data-key="notes">Cited lecture notes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Arbitrage -->
+        <article class="project flip" id="arbitrage" aria-labelledby="arb-title">
+          <div class="project-body">
+            <p class="project-kicker">Prediction market arbitrage, research system</p>
+            <h3 id="arb-title">Can a $10K account profit from price gaps between Kalshi and Polymarket?</h3>
+            <p class="project-copy">
+              I built a system that collects order books from both venues, matches identical events across them, and simulates execution with <strong>real fees, 2–5 second latency and order-book depth</strong>. The first version streamed live prices over WebSockets from AWS EC2, and a collector still polls both venues every minute. Before testing each idea I wrote down what would count as a failure, then ran small real-money tests to check the simulator.
+            </p>
+            <p class="project-copy">
+              No strategy proved profitable, and I stopped each one when it hit a failure signal I’d set in advance. That discipline is the result I’m proudest of: testing an idea properly and killing it when the numbers say so.
+            </p>
+            <div class="mini-stats">
+              <div><b class="num">2.07M</b><span>order-book snapshots</span></div>
+              <div><b class="num">9.4K</b><span>matched market groups</span></div>
+              <div><b class="num">293</b><span>regression tests</span></div>
+            </div>
+            <ul class="tags" aria-label="Built with">
+              <li class="tag">Python</li><li class="tag">WebSockets</li><li class="tag">AWS EC2</li><li class="tag">SQLite</li><li class="tag">Kalshi API</li><li class="tag">Polymarket CLOB</li><li class="tag">launchd</li>
+            </ul>
+          </div>
+          <div class="project-visual">
+            <figure class="edge" id="edgeChart">
+              <figcaption>
+                <p class="edge-title">The best gap I found, before and after fees</p>
+                <p class="edge-sub">Cents per contract, from one live snapshot of 92 matched Kalshi–Polymarket pairs</p>
+              </figcaption>
+              <div class="edge-chart" role="img" aria-label="Best raw spread was plus 2.0 cents. Fees on both legs cost 8.6 cents, leaving minus 6.6 cents. Zero of 92 pairs were profitable after fees.">
+                <div class="zero"></div>
+                <div class="edge-bars">
+                  <div class="ebar up" data-v="2.0"><span class="val">+2.0¢</span><div class="fill"></div><span class="lbl">Raw spread</span></div>
+                  <div class="ebar fee" data-v="-8.6" data-from="2.0"><span class="val">−8.6¢</span><div class="fill"></div><span class="lbl">Fees, both legs</span></div>
+                  <div class="ebar down" data-v="-6.6"><span class="val">−6.6¢</span><div class="fill"></div><span class="lbl">Net edge</span></div>
+                  <div class="ebar down" data-v="0" data-count><span class="val">0 / 92</span><div class="fill"></div><span class="lbl">Pairs profitable</span></div>
+                </div>
+              </div>
+              <p class="edge-foot">An 8-hour overnight live run on EC2 finished at −$1.18. Speed wasn’t the problem: order books held steady well past my latency window.</p>
+            </figure>
+            <ol class="log" aria-label="Strategies tested, in order">
+              <li><span class="n">1</span><span class="t">Cross-venue arbitrage</span><span class="verdict">Stopped</span><span class="d">In a live snapshot, 0 of 92 matched pairs had a positive edge after fees.</span></li>
+              <li><span class="n">2</span><span class="t">Market making on Polymarket</span><span class="verdict">Stopped</span><span class="d">In a paper test, all 3 fills on a wide-spread market landed on the losing side. A tight-spread market got 0 fills in 80 minutes.</span></li>
+              <li><span class="n">3</span><span class="t">Same-venue YES + NO</span><span class="verdict">Stopped</span><span class="d">A 14-minute live scan found 0 mispricings across 54,489 order-book updates.</span></li>
+              <li><span class="n">4</span><span class="t">Kalshi mention markets</span><span class="verdict">Stopped</span><span class="d">A historical screen looked positive at midpoint prices, but not under worse fills. The live trial lost $63 over 26 markets and hit my pre-set kill rule.</span></li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- More projects -->
+        <h3 class="more-heading">More projects</h3>
+        <ul class="more-grid">
+          <li class="more">
+            <div class="more-shot tall"><img src="assets/img/hp-home.jpg" alt="100 Point home screen with a 100-point goal ring and a list of logged activities" loading="lazy"></div>
+            <div class="more-top">
+              <img src="assets/img/hp-icon.png" alt="" width="44" height="44">
+              <div><h4>100 Point</h4><p>iOS app, in development</p></div>
+            </div>
+            <p>A habit tracker where you log activities to reach 100 points a day and build a running Life Score. It adds HealthKit data, streaks, badges, friend and group leaderboards, a home-screen widget, a Screen Time extension and a Pro subscription. About 99K lines of Swift. It isn’t released yet, and I paused work on it in March 2026.</p>
+            <ul class="tags"><li class="tag">SwiftUI</li><li class="tag">HealthKit</li><li class="tag">WidgetKit</li><li class="tag">Firebase</li><li class="tag">StoreKit</li></ul>
+          </li>
+          <li class="more">
+            <div class="more-shot"><img src="assets/img/golf-home.jpg" alt="Texas A&M Club Golf website home page" loading="lazy"></div>
+            <div class="more-top">
+              <span class="glyph" aria-hidden="true">TG</span>
+              <div><h4>Texas A&amp;M Club Golf platform</h4><p>Built, not yet deployed</p></div>
+            </div>
+            <p>As treasurer, I built an app to replace the club’s season spreadsheet: an 18-hole scorecard (putts, fairways, greens in regulation), practice check-ins, live Fightin’ Farmers Cup standings, NCCGA points and admin tools for officers.</p>
+            <ul class="tags"><li class="tag">Next.js 15</li><li class="tag">React 19</li><li class="tag">TypeScript</li><li class="tag">Tailwind</li></ul>
+          </li>
+          <li class="more">
+            <div class="more-shot"><img src="assets/img/signal.jpg" alt="Signal Console stock research dashboard" loading="lazy"></div>
+            <div class="more-top">
+              <span class="glyph" aria-hidden="true">S</span>
+              <div><h4>Signal</h4><p>Equity research console</p></div>
+            </div>
+            <p>An earnings and volatility research tool that started with Google Trends, SEC Form 4 insider filings and options-implied moves, then added more data sources. I ran 22 rounds of backtests, each with pass criteria set in advance. Several early passes failed later validation, and one price and volume strategy still holds up in backtests. I also built a paper-trading console on a broker sandbox with live orders locked off. No money is deployed.</p>
+            <ul class="tags"><li class="tag">Python</li><li class="tag">SEC EDGAR</li><li class="tag">yfinance</li><li class="tag">SQLite</li><li class="tag">pytest</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section exp-section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title" id="exp-title">Experience</h2>
+          <p class="section-intro">Strategy, wealth management, and a business I’ve run since high school.</p>
+        </div>
+        <ol class="timeline">
+          <li class="job">
+            <p class="job-when num">Apr 2026 – present<br><span class="now">Current role</span></p>
+            <div>
+              <h3>Ucardia</h3>
+              <p class="job-role">B2C Strategy Lead, Intern <span>(heart health software, remote)</span></p>
+              <ul>
+                <li>Promoted from market research intern to lead B2C creator partnerships. I took the program from market analysis through pricing, stakeholder approval and outreach launch.</li>
+                <li>Set the program’s unit economics across list pricing, promotional discounts and creator commissions, then got product and partnerships aligned on the model before launch.</li>
+                <li>Built the competitor analysis, pitch decks and outreach sequences used to recruit creator partners.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <p class="job-when num">May 2024 – Aug 2025</p>
+            <div>
+              <h3>Watters Creek Wealth Management</h3>
+              <p class="job-role">Finance Intern <span>(Allen, TX)</span></p>
+              <ul>
+                <li>Built equity, ETF and fixed-income model portfolios matched to clients’ risk tolerance and time horizons.</li>
+                <li>Prepared reviews for 50+ households, turning portfolio performance into clear summaries clients could follow.</li>
+                <li>Modeled current-year tax figures for an advisor’s presentation on a multigenerational dynasty trust.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <p class="job-when num">Mar 2023 – present</p>
+            <div>
+              <h3>Preston Trail Golf Club</h3>
+              <p class="job-role">Golf Operations <span>(Dallas, TX)</span></p>
+              <ul>
+                <li>Manage a 96-cart fleet and practice facility operations. Forecaddie for private-club members and guests.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <p class="job-when num">May 2022 – present</p>
+            <div>
+              <h3>Metroplex Detailing</h3>
+              <p class="job-role">Founder and Operator <span>(North Dallas, TX)</span></p>
+              <ul>
+                <li>Founded and run a mobile detailing business serving 2–4 vehicles a week. I handle pricing, margins, invoicing, quarterly taxes and supply inventory.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title" id="about-title">About me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="assets/img/outdoor.jpg" alt="Ben Williams outdoors in a light blue blazer" loading="lazy" width="720" height="800">
+          </div>
+          <div class="about-text">
+            <p>I’m from McKinney, Texas, and I’m a finance major at <strong>Texas A&amp;M’s Mays Business School</strong>. My background is on the business side: building portfolios, setting unit economics and running my own small business.</p>
+            <p>Building software is how I test business ideas for real. I took NutriStack all the way to the App Store, from product design to pricing to launch marketing. The trading research answered a question about market efficiency with data instead of opinion. Each project taught me to ship something real and to measure it honestly.</p>
+            <p>I’m most interested in roles where <strong>finance, strategy and technology overlap</strong>.</p>
+
+            <div class="lead-block">
+              <h3>Texas A&amp;M Golf Club (NCCGA)</h3>
+              <p class="role num">Treasurer, Sep 2024 – present</p>
+              <ul>
+                <li>Built a club website and member platform to replace the season spreadsheets with online scoring, leaderboards and scheduling.</li>
+                <li>Organize team travel, including an NCCGA National Championship trip to New Mexico. I also set up a vendor partnership with 1WithGolf for team equipment.</li>
+              </ul>
+            </div>
+
+            <div class="skills">
+              <div>
+                <h3>Finance and business</h3>
+                <ul class="tags">
+                  <li class="tag">Financial modeling (Excel)</li><li class="tag">Pivot tables</li><li class="tag">Portfolio construction</li><li class="tag">Pricing and unit economics</li><li class="tag">Bookkeeping</li><li class="tag">Competitive analysis</li><li class="tag">Market research</li><li class="tag">PowerPoint</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Technology</h3>
+                <ul class="tags">
+                  <li class="tag">Swift</li><li class="tag">SwiftUI</li><li class="tag">Python</li><li class="tag">TypeScript</li><li class="tag">React</li><li class="tag">Firebase</li><li class="tag">AWS</li><li class="tag">Azure</li><li class="tag">Railway</li><li class="tag">SQLite</li><li class="tag">Microsoft Access</li><li class="tag">AI coding agents</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <footer class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="contact-title" id="contact-title"><a href="mailto:bawtx2005@gmail.com">Let’s talk.</a></h2>
+      <p class="sub">I’m happy to talk about internships, full-time roles or any of these projects. Email is the fastest way to reach me.</p>
+      <div class="email-row">
+        <a class="email-big" href="mailto:bawtx2005@gmail.com">bawtx2005@gmail.com</a>
+        <button class="copy-btn" id="copyEmail" type="button" data-email="bawtx2005@gmail.com">Copy email</button>
+      </div>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="assets/files/Ben_Williams_Resume.pdf" download>Download résumé</a>
+        <a class="btn btn-ghost" href="https://github.com/benw13" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" id="linkedinBtn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://nutristackapp.com" target="_blank" rel="noopener">NutriStack</a>
+      </div>
+      <div class="footer">
+        <span>© <span id="year">2026</span> Ben Williams</span>
+        <span>McKinney and College Station, Texas</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
